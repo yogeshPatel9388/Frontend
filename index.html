@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Resume Services — Landing</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Fixed top navbar -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="logo-placeholder.png" alt="Company Logo" class="logo" />
+          <div class="brand-text">
+            <div class="company">COMPANY</div>
+            <div class="tagline">business tagline</div>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Our Services</a>
+          <a href="#">Pricing</a>
+          <a href="#">FAQ</a>
+        </nav>
+
+        <div class="nav-cta">
+          <button class="btn btn-ghost">Get A Quote</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <h1 class="hero-title">
+              Your Resume
+              <span class="highlight">Deserves A <u>Yes</u></span>
+              Let’s<br />Make It Happen
+            </h1>
+            <p class="hero-sub">
+              If your resume isn’t getting responses, it’s time for an upgrade.
+              Get an ATS-optimized resume crafted by HR experts to help you land
+              more interviews. Our resumes are designed to get your foot in the
+              door and place your name at the top of the shortlist.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#">Resume Packages</a>
+              <a class="btn btn-outline" href="#">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <!-- Circular pink background behind the model -->
+            <div class="hero-photo-wrap">
+              <img
+                src="girl-img.png"
+                alt="Student holding books"
+                class="hero-photo"
+              />
+              <!-- rating badge -->
+              <div class="badge rating">
+                <div class="rating-value">4.9</div>
+                <div class="stars">★★★★★</div>
+                <div class="small">Instructor Rating</div>
+              </div>
+
+              <!-- small card -->
+              <div class="badge mini">
+                <div class="hat">🎓</div>
+                <div class="mini-text">
+                  <div class="num">260+</div>
+                  <div class="desc">Online Resume Created</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature intro -->
+      <section class="features-intro">
+        <div class="container">
+          <div class="what-you-get">What You Get</div>
+          <h2 class="section-title">
+            You're Not Just Another Applicant And Your Resume Shouldn't Look
+            Like One
+          </h2>
+        </div>
+      </section>
+
+      <!-- Features cards -->
+      <section class="features">
+        <div class="container features-grid">
+          <article class="card">
+            <div class="card-illustration">
+              <!-- Inline SVG with embedded image for Resume -->
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <image
+                  href="one.png"
+                  x="0"
+                  y="0"
+                  width="48"
+                  height="48"
+                />
+              </svg>
+            </div>
+            <h3>A Resume That Passes ATS Filters</h3>
+            <p>
+              Get a professionally written, keyword-focused resume that lands in
+              recruiter inboxes — not rejection piles.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-illustration">
+              <!-- Inline SVG with embedded image for Envelope -->
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <image
+                  href="two.png"
+                  x="0"
+                  y="0"
+                  width="48"
+                  height="48"
+                />
+              </svg>
+            </div>
+            <h3>A Cover Letter That Gets Read</h3>
+            <p>
+              Stand out with a cover letter that speaks directly to the role and
+              reflects your strengths.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-illustration">
+              <!-- Inline SVG with embedded image for Link -->
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <image
+                  href="three.png"
+                  x="0"
+                  y="0"
+                  width="48"
+                  height="48"
+                />
+              </svg>
+            </div>
+            <h3>A LinkedIn Profile That Works For You</h3>
+            <p>
+              Attract the right eyes, start conversations, and show up in
+              recruiter searches.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-illustration">
+              <!-- Inline SVG with embedded image for Chat/Interview -->
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <image
+                  href="four.png"
+                  x="0"
+                  y="0"
+                  width="48"
+                  height="48"
+                />
+              </svg>
+            </div>
+            <h3>Interview Confidence</h3>
+            <p>
+              Interview preparation with real HR professionals so you speak
+              clearly, confidently, and convincingly.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- footer-ish spacing -->
+      <div class="spacer"></div>
+    </main>
+
+    <!-- small footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> COMPANY. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // set current year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
